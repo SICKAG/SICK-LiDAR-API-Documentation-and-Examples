@@ -15,11 +15,11 @@ This description covers all possibilities to work with the following sensors.
   <summary>Table of content</summary>
 
 - [Introduction](#introduction)
-- [General Information](#general-information)
+- [General information](#general-information)
   - [IP addresses and ports](#ip-addresses-and-ports)
   - [Drivers and SDKs](#drivers-and-sdks)
 - [Measurement Data Streaming](#measurement-data-streaming)
-  - [Comparision and choice of format](#comparision-and-choice-of-format)
+  - [Comparison and choice of format](#comparison-and-choice-of-format)
   - [COMPACT Format](#compact-format)
   - [MSGPACK Format](#msgpack-format)
     - [MSGPACK code examples](#msgpack-code-examples)
@@ -37,14 +37,14 @@ This description covers all possibilities to work with the following sensors.
       - [Challenge and Response Python example](#challenge-and-response-python-example)
     - [Insomnia Collection](#insomnia-collection)
   - [CoLa](#cola)
-    - [General Information](#general-information-1)
+    - [General information](#general-information-1)
       - [Variable types](#variable-types)
       - [Command basics](#command-basics)
       - [Required user level](#required-user-level)
     - [CoLa B](#cola-b)
     - [CoLa A](#cola-a)
-    - [CoLa telegrmm overview](#cola-telegrmm-overview)
-    - [Error codes](#error-codes)
+    - [CoLa telegram overview](#cola-telegram-overview)
+    - [CoLa error codes](#cola-error-codes)
     - [CoLa code examples](#cola-code-examples)
       - [CoLa A](#cola-a-1)
         - [Read a parameter](#read-a-parameter)
@@ -52,13 +52,14 @@ This description covers all possibilities to work with the following sensors.
           - [C++ example](#c-example)
         - [Write a parameter](#write-a-parameter)
           - [Python example](#python-example-1)
+          - [C++ example](#c-example-1)
       - [CoLa B](#cola-b-1)
         - [Read a parameter](#read-a-parameter-1)
           - [Python example](#python-example-2)
-          - [C++ example](#c-example-1)
+          - [C++ example](#c-example-2)
         - [Write a parameter](#write-a-parameter-1)
           - [Python example](#python-example-3)
-          - [C++ example](#c-example-2)
+          - [C++ example](#c-example-3)
 - [Getting started to work with a sensor](#getting-started-to-work-with-a-sensor)
   - [:zero: Prerequisites](#zero-prerequisites)
   - [:one: See scan data on sensor web server](#one-see-scan-data-on-sensor-web-server)
@@ -121,7 +122,7 @@ sequenceDiagram
 
 -----
 
-# General Information
+# General information
 
 ## IP addresses and ports
 
@@ -138,7 +139,7 @@ The default IP address for the sensors (if not specified different is `192.168.0
 
 <img align=right width="200" src="docs/img/ROS-logo.png"/> 
 
-In case you prefer to use complete drivers instead of single telegrams, the following options are available:
+For complete drivers instead of single telegrams, the following options are available:
 
 - [ROS drivers](https://github.com/SICKAG/sick_scan_xd)
 - [ROS2 drivers](https://github.com/SICKAG/sick_scan_xd)
@@ -149,13 +150,13 @@ In case you prefer to use complete drivers instead of single telegrams, the foll
 
 # Measurement Data Streaming
 
-## Comparision and choice of format
+## Comparison and choice of format
 
-|               | When to use                                                                                                   | Bandwidth Factor |
+|               | Advantages           | Bandwidth factor |
 | ------------- | ------------------------------------------------------------------------------------------------------------- | ---------------- |
-| **COMPACT**   | - if you want to have the smallest traffic <br/> - it is the best fit for PLCs.                               | 1                |
-| **MSGPACK**   | - if you want to work with available libraries in almost all programming languages                            | ~2               |
-| **WebSocket** | - if you do not want to open any other ports than `80`  <br/> - if you don't use/need high output frequencies | ~15              |
+| **COMPACT**   | - smallest traffic <br/> - best fit for PLCs                               | 1                |
+| **MSGPACK**   | - available libraries in almost all programming languages                            | ~2               |
+| **WebSocket** | - uses port `80` which is open in most circumstances <br/> - good for low output frequencies <br/> - uses JSON structure | ~15              |
 
 ## COMPACT Format
 
@@ -598,7 +599,7 @@ CoLa (Command Language) is SICK proprietary way to serialize and deserialize dat
 
 In general we differentiate between CoLa A (ASCII) and CoLa B (binary)
 
-### General Information
+### General information
 
 #### Variable types
 
@@ -697,7 +698,7 @@ This is again an example telegram for setting the user level “Authorized Clien
 | `46 34 37 32 34 37 34 34`                | `F4724744`      | fixed Hex value, serving as password for the selected user level “Authorized Client” |
 | `03`                                     | `ETX`           | Framing                                                                              |
 
-### CoLa telegrmm overview
+### CoLa telegram overview
 
 Please refer to the following CoLa specifications. These are used to describe the CoLa interface of the listed sensors. The majority of CoLa telegrams can be used among all listed sensors. Due to hardware specifics some HTTP requests are only valid for some sensors.
 
@@ -705,7 +706,7 @@ Please refer to the following CoLa specifications. These are used to describe th
 
 - :link: [multiScan100 specific CoLa specification (not available yet)](device-configuration/cola/cola-multiScan100-specific.md)
 
-### Error codes
+### CoLa error codes
 
 | Error code                  | Description                                                                                                                                                                                                                    | Dec | Hex |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | --- |
@@ -925,7 +926,17 @@ data = client_socket.recv(1024)
 print("Response: " + data.decode('ascii'))
 
 client_socket.close()
+
 ```
+###### C++ example
+
+>**NOTE**
+>- This is a simple example and you may want to add more error handling and more robustness to your final code.
+
+```cpp
+cpp code
+```
+
 
 #### CoLa B
 
