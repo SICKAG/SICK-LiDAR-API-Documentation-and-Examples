@@ -29,7 +29,7 @@ This description covers all possibilities to work with the following sensors.
     - [WebSocket code examples](#websocket-code-examples)
       - [Python](#python)
       - [Node RED](#node-red)
-- [sensor Configuration](#sensor-configuration)
+- [Sensor configuration](#sensor-configuration)
   - [Choice of configuration method](#choice-of-configuration-method)
   - [HTTP / REST](#http--rest)
     - [OpenAPI Specification](#openapi-specification)
@@ -441,7 +441,7 @@ ws.onopen = function () {
 
 --------
 
-# sensor Configuration
+# Sensor configuration
 
 ## Choice of configuration method
 
