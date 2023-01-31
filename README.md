@@ -156,7 +156,7 @@ For complete drivers instead of single telegrams, the following options are avai
 | ------------- | ------------------------------------------------------------------------------------------------------------- | ---------------- |
 | **COMPACT**   | - smallest traffic <br/> - best fit for PLCs                               | 1                |
 | **MSGPACK**   | - available libraries in almost all programming languages                            | ~2               |
-| **WebSocket** | - uses port `80` which is open in most circumstances <br/> - good for low output frequencies <br/> - uses JSON structure | ~15              |
+| **WebSocket** | - uses port `80` which is open in most circumstances <br/> - good for low output frequencies <br/> - uses JSON structure | ~3              |
 
 ## COMPACT Format
 
