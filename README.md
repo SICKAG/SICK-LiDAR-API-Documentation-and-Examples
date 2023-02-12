@@ -185,7 +185,7 @@ Here is an example of C++ code that receives a MSGPACK data string via UDP and d
 >- You need to include the `msgpack` library in your project to use this code.
 
 ```cpp
-
+not available yet
 ```
 
 This code uses the `msgpack` library to deserialize a MSGPACK data string that is received via UDP. The code first creates a `socket` and binds it to a `port`, then enters a loop to continuously receive data from the socket. The received data is passed to the `msgpack::unpack` function, which returns an `object` handle that can be used to access the deserialized data. The code then outputs the deserialized data to the console.
@@ -199,7 +199,7 @@ Here is an example of Python code that receives a MSGPACK data string via UDP an
 >- For this sample code you need to install the python msgpack module (`$ pip install msgpack`)
 
 ```python
-
+not available yet
 ```
 
 In this example, the code creates a UDP socket and binds it to the address `192.168.0.1` on port `2115`. It then enters a loop to continuously receive data from the `socket`, deserialize it using the `msgpack` library, and print the deserialized data to the console. The `recvfrom` method is used to receive data from the socket and also obtain the address of the sender. The `unpackb` method from the `msgpack` library is used to deserialize the received data. The` raw=False` argument is used to ensure that the deserialized data is returned as a Python data structure (e.g. dictionary or list) instead of a bytes object.
@@ -956,7 +956,7 @@ python code
 >- This is a simple example and you may want to add more error handling and more robustness to your final code.
 
 ```cpp
-cpp code
+not available yet
 ```
 ##### Write a parameter
 
@@ -966,7 +966,7 @@ cpp code
 >- This is a simple example and you may want to add more error handling and more robustness to your final code.
 
 ```python
-python code 
+not available yet 
 ```
 ###### C++ example
 
@@ -974,7 +974,7 @@ python code
 >- This is a simple example and you may want to add more error handling and more robustness to your final code.
 
 ```cpp
-cpp code 
+not available yet
 ```
 ----------------
 
