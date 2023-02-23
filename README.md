@@ -1,6 +1,6 @@
 <img align=right width="200" src="docs/img/sick-logo.jpg"/> 
 
-LiDAR API Documentation
+LiDAR API Documentation and Samples
 ---
 
 This description covers all possibilities to work with the following sensors. 
