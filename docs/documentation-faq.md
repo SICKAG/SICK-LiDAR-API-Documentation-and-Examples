@@ -3,11 +3,10 @@
 FAQ
 ---
 
----------
+# Table of content
 
-<details>
-  <summary>Table of content</summary>
 
+- [Table of content](#table-of-content)
 - [How to export all settings or parameter?](#how-to-export-all-settings-or-parameter)
 - [I can not connect to my sensor? Any ideas?](#i-can-not-connect-to-my-sensor-any-ideas)
   - [Change subnet of client system](#change-subnet-of-client-system)
@@ -16,9 +15,6 @@ FAQ
   - [Change sensor IP address](#change-sensor-ip-address)
 
 
-</details>
-
----------
 
 # How to export all settings or parameter?
 

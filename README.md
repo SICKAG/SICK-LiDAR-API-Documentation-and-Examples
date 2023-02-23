@@ -5,7 +5,7 @@ LiDAR API Documentation and Examples
 
 This description covers all possibilities to work with the following sensors. 
 
-- [multiScan100](www.sick.com/multiScan100)  <img style="right;"  width="45" src="docs/img/multiScan.png"/> 
+- [multiScan100](https://www.sick.com/de/en/search?text=multiScan)  <img style="right;"  width="45" src="docs/img/multiScan.png"/> 
 
 ... you have your sensor on hand: [Kick start here](#getting-started-to-work-with-a-sensor) :rocket:
 

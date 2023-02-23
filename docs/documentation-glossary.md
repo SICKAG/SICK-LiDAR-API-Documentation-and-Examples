@@ -3,11 +3,9 @@
 Glossary
 ---
 
----------
+# Table of content
 
-<details>
-  <summary>Table of content</summary>
-
+- [Table of content](#table-of-content)
 - [TCP](#tcp)
 - [UDP](#udp)
 - [HTTP](#http)
@@ -15,9 +13,6 @@ Glossary
 - [OpenAPI](#openapi)
 
 
-</details>
-
----------
 
 # TCP
 

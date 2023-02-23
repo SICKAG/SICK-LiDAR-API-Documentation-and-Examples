@@ -7,11 +7,9 @@ CoLa (Command Language) is SICK proprietary way to serialize and deserialize dat
 
 In general we differentiate between CoLa A (ASCII) and CoLa B (binary).
 
----------
+# Table of content
 
-<details>
-  <summary>Table of content</summary>
-
+- [Table of content](#table-of-content)
 - [Examples](#examples)
 - [Variable types](#variable-types)
 - [Command basics](#command-basics)
@@ -22,9 +20,6 @@ In general we differentiate between CoLa A (ASCII) and CoLa B (binary).
 - [CoLa error codes](#cola-error-codes)
 
 
-</details>
-
----------
 
 # Examples
 All available examples can be found [here](examples/).

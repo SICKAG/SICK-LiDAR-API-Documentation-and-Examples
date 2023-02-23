@@ -1,12 +1,9 @@
 <img align=right width="200" src="../docs/img/sick-logo.jpg"/> 
 
-Device Configuration via HTTP / REST
+Device Configuration via REST
 ---
 
----------
-
-<details>
-  <summary>Table of content</summary>
+# Table of content
 
 - [Examples](#examples)
 - [Variable types](#variable-types)
@@ -17,10 +14,6 @@ Device Configuration via HTTP / REST
 - [CoLa telegram overview](#cola-telegram-overview)
 - [CoLa error codes](#cola-error-codes)
 
-
-</details>
-
----------
 
 # Examples
 All available examples can be found [here](examples/).
@@ -65,6 +58,6 @@ For this purpose, there are different detailed methods that are based on this ba
 
 Sometimes it is helpful to test an interface with a REST client like Insomnia. If you want to write a sensor parameter via RES, you must first log in and pass a corresponding header via a challenge response procedure for each write operation.
 
-To make this easier you can use this Insomnia [plugin](examples/rest/insomina/insomnia-plugin-rest.zip) and import the following Insomnia collection to test the device via the HTTP/REST interface.
-Additionally, you can find an Insomnia Collection [here ](examples/rest/insomina/insomina-collection-multiScan100.json) to work with the sensors.
+To make this easier you can use this Insomnia [plugin](../examples/rest/insomina/insomnia-plugin-rest.zip) and import the following Insomnia collection to test the device via the HTTP/REST interface.
+Additionally, you can find an Insomnia Collection [here](../examples/rest/insomina/insomina-collection-multiScan100.json) to work with the sensors.
 

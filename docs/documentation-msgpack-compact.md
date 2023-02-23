@@ -3,19 +3,12 @@
 Measurement Data Streaming via COMPACT and MSGPACK
 ---
 
----------
+# Table of content
 
-<details>
-  <summary>Table of content</summary>
-
+- [Table of content](#table-of-content)
 - [Examples](#examples)
 - [COMPACT Format](#compact-format)
 - [MSGPACK Format](#msgpack-format)
-
-
-</details>
-
----------
 
 # Examples
 All available examples can be found [here](examples/).
