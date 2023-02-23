@@ -9,11 +9,10 @@ This description covers all possibilities to work with the following sensors.
 
 ... you have your sensor on hand: [Kick start here](#getting-started-to-work-with-a-sensor) :rocket:
 
----
+# Table of content
 
-<details>
-  <summary>Table of content</summary>
 
+- [Table of content](#table-of-content)
 - [Introduction](#introduction)
 - [General information](#general-information)
   - [Drivers and SDKs](#drivers-and-sdks)
@@ -28,9 +27,6 @@ This description covers all possibilities to work with the following sensors.
 - [FAQ \& Glossary](#faq--glossary)
 - [Keywords](#keywords)
 
-</details>
-
----
 
 # Introduction
 
