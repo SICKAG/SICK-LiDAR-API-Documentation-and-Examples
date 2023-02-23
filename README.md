@@ -25,7 +25,6 @@ This description covers all possibilities to work with the following sensors.
   - [:one: See scan data on sensor web server](#one-see-scan-data-on-sensor-web-server)
   - [:two: Decide how you want to work with the device](#two-decide-how-you-want-to-work-with-the-device)
 - [FAQ \& Glossary](#faq--glossary)
-- [Keywords](#keywords)
 
 
 # Introduction
@@ -66,8 +65,6 @@ sequenceDiagram
     client->>sensor: ...
 ```
 
------
-
 # General information
 
 
@@ -90,8 +87,6 @@ All available examples can be found [here](examples/).
 
 The default IP address for the sensors (if not specified different is `192.168.0.1`)
 
---------
-
 # Measurement Data Streaming - Comparison and choice
 
 |     | Transport Layer | Port | Advantages | Bandwidth factor |
@@ -101,8 +96,6 @@ The default IP address for the sensors (if not specified different is `192.168.0
 | **[WebSocket](docs/documentation-websocket.md)**     | `TCP` |`80`                   | - uses port `80` which is open in most circumstances <br/> - good for low output frequencies <br/> - uses JSON structure | ~3               |
 
 
---------
-
 # Device  configuration - Comparison and choice
 
 |                                          | Transport Layer | Port                   | When to use what                                                                                     |
@@ -111,7 +104,6 @@ The default IP address for the sensors (if not specified different is `192.168.0
 | **[CoLa A](docs/documentation-cola.md)** | `TCP`           | default is port `2111` | - if your system cannot handle a challenge and response process <br/>                                |
 | **[CoLa B](docs/documentation-cola.md)** | `TCP`           | default is port `2112` | - if your system cannot handle a challenge and response process <br/> - it is the best fit for PLCs. |
 
-----------------
 
 # Getting started to work with a sensor
 
@@ -147,12 +139,5 @@ The default IP address for the sensors (if not specified different is `192.168.0
     - CoLa via `TCP`
 
 
-----------------
-
 # [FAQ](docs/documentation-faq.md) & [Glossary](docs/documentation-glossary.md)
 
-
------------------
-
-# Keywords
-LiDAR SICK LiDAR SICK Laser SICK Laserscanner multiscan multiScan100 multiScan136
