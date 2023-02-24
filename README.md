@@ -32,7 +32,7 @@ This description covers all possibilities to work with the following sensors.
 The LiDAR API documentation differentiates between two communication concepts. For both cases there are multiple ways to work with the sensor.
 
 **1. Receive event-driven measurement data streaming**
-  - [COMPACT](docs/documentation-msgpack-compact.md)
+  - [Compact](docs/documentation-msgpack-compact.md)
   - [MSGPACK](docs/documentation-msgpack-compact.md)
   - [WebSocket](docs/documentation-websocket.md)
 
@@ -91,7 +91,7 @@ The default IP address for the sensors (if not specified different is `192.168.0
 
 |     | Transport Layer | Port | Advantages | Bandwidth factor |
 | --- |---------------------- |---------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------- |
-| **[COMPACT](docs/documentation-msgpack-compact.md)** | `UDP` |default is port `2115` | - smallest traffic <br/> - best fit for PLCs                                                                             | 1                |
+| **[Compact](docs/documentation-msgpack-compact.md)** | `UDP` |default is port `2115` | - smallest traffic <br/> - best fit for PLCs                                                                             | 1                |
 | **[MSGPACK](docs/documentation-msgpack-compact.md)** | `UDP` |default is port `2115` | - available libraries in almost all programming languages                                                                | ~2               |
 | **[WebSocket](docs/documentation-websocket.md)**     | `TCP` |`80`                   | - uses port `80` which is open in most circumstances <br/> - good for low output frequencies <br/> - uses JSON structure | ~3               |
 
@@ -131,7 +131,7 @@ The default IP address for the sensors (if not specified different is `192.168.0
   - Please refer to our [C++ / Python driver](https://github.com/SICKAG/sick_scan_xd).
 - **Case 4**: You want to build your own driver in specidic programming language.
   - Decide which measurement data straming approach you want you use. You can choose from these:
-    - COMPACT Format via `UDP`
+    - Compact Format via `UDP`
     - MSGPACK Format via `UDP`
     - ScanData via `WebSockets`
   - Decide which sensor configuration approach you want you use. You can choose from these:
