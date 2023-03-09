@@ -3,6 +3,9 @@
 LiDAR API Documentation and Examples
 ---
 
+![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `This document is on DRAFT stage!` ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
+
 This description covers all possibilities to work with the following sensors. 
 
 - [multiScan100](https://www.sick.com/de/en/lidar-sensors/3d-lidar-sensors/multiscan100/c/g574914)  <img style="right;"  width="45" src="docs/img/multiScan.png"/> 
