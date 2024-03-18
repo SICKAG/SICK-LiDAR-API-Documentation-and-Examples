@@ -5,7 +5,6 @@ FAQ
 
 # Table of content
 
-
 - [Table of content](#table-of-content)
 - [How to export all settings or parameter?](#how-to-export-all-settings-or-parameter)
 - [I can not connect to my sensor? Any ideas?](#i-can-not-connect-to-my-sensor-any-ideas)
@@ -14,13 +13,7 @@ FAQ
     - [Linux](#linux)
   - [Change sensor IP address](#change-sensor-ip-address)
 
-
-
-# How to export all settings or parameter?
-
-Currently there is no automated solution to export all settings.
-
-# I can not connect to my sensor? Any ideas?
+# I can not connect to my sensor?
 
 Make sure your sensor and client system is in the same subnet. You want to either change the subnet of your ethernet interface or you want to change the IP address of the sensor.
 
