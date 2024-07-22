@@ -3,8 +3,6 @@
 LiDAR API Documentation
 ---
 
-![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `This document is on DRAFT stage!` ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-
 
 This description covers all possibilities to work with the following sensors. 
 
@@ -28,7 +26,14 @@ This description covers all possibilities to work with the following sensors.
   - [:zero: Prerequisites](#zero-prerequisites)
   - [:one: See scan data on sensor web server](#one-see-scan-data-on-sensor-web-server)
   - [:two: Decide how you want to work with the device](#two-decide-how-you-want-to-work-with-the-device)
-- [FAQ \& Glossary](#faq--glossary)
+- [FAQ](#faq)
+  - [I can not connect to my sensor?](#i-can-not-connect-to-my-sensor)
+- [Glossary](#glossary)
+  - [TCP](#tcp)
+  - [UDP](#udp)
+  - [HTTP](#http)
+  - [REST](#rest)
+  - [OpenAPI](#openapi)
 
 
 # Introduction
@@ -97,7 +102,6 @@ The default IP address for the sensors (if not specified different is `192.168.0
 | --- |---------------------- |---------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------- |
 | **[Compact](docs/documentation-msgpack-compact.md)** | `UDP` |default is port `2115` | - smallest traffic <br/> - best fit for PLCs                                                                             | 1                |
 | **[MSGPACK](docs/documentation-msgpack-compact.md)** | `UDP` |default is port `2115` | - available libraries in almost all programming languages                                                                | ~2               |
-| **[WebSocket](docs/documentation-websocket.md)**     | `TCP` |`80`                   | - uses port `80` which is open in most circumstances <br/> - good for low output frequencies <br/> - uses JSON structure | ~3               |
 
 
 # Device  configuration - Comparison and choice
@@ -143,5 +147,37 @@ The default IP address for the sensors (if not specified different is `192.168.0
     - CoLa via `TCP`
 
 
-# [FAQ](docs/documentation-faq.md) & [Glossary](docs/documentation-glossary.md)
+# FAQ
 
+## I can not connect to my sensor?
+
+Make sure your sensor and client system is in the same subnet. You want to either change the subnet of your ethernet interface or you want to change the IP address of the sensor.
+
+**Change subnet of client system**
+
+You want make sure
+> NOTE 
+> It's important to note that changes the IP address on your computer may affect your ability to connect to other sensors on your network or access the internet. 
+
+**Windows**
+To change the IP address on a Windows computer, you can follow these steps:
+  
+- Open the Start menu and search for "Control Panel."
+- Click on "Network and Sharing Center" in the Control Panel.
+
+# Glossary
+
+## TCP
+TCP (Transmission Control Protocol) is a transport-layer protocol used to establish and maintain connections between devices on a network. It is responsible for ensuring that data is transmitted reliably and in the correct order, by using a system of acknowledgements and retransmissions.
+
+## UDP
+UDP (User Datagram Protocol) is a transport-layer protocol used for communication in a computer network. It is a connectionless protocol, meaning that it does not establish a dedicated connection before sending data, unlike TCP (Transmission Control Protocol). This makes UDP faster and more efficient, but also less reliable because there is no built-in mechanism for error checking and retransmission of lost packets.
+
+## HTTP
+HTTP (Hypertext Transfer Protocol) is an application-layer protocol that is used to transmit data over the internet. It is the foundation of the web, and is used by browsers to request and receive information from web servers. HTTP defines a set of request methods, such as GET, POST, PUT, and DELETE, which are used to indicate the desired action to be performed on a specified resource.
+
+## REST
+REST (Representational State Transfer) is an architectural style for building web services. It is based on the principles of HTTP and is designed to work with the existing infrastructure of the web. RESTful web services use HTTP methods to indicate the desired action to be performed on a specified resource, and return data in a format that can be easily consumed by a client, such as JSON or XML.
+
+## OpenAPI
+OpenAPI is a specification for building RESTful web services. It is used to describe the structure and behavior of an API (Application Programming Interface), including the available endpoints, the request and response formats, and the authentication methods. OpenAPI is a machine-readable format, which means that tools can be used to generate client libraries, documentation, and other artifacts based on the specification. This makes it easy for developers to understand and interact with an API, and also helps ensure consistency across different implementations.
