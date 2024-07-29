@@ -88,10 +88,6 @@ For complete drivers instead of single telegrams, the following options are avai
 - [Python drivers](https://github.com/SICKAG/sick_scan_xd)
 - [C++ drivers](https://github.com/SICKAG/sick_scan_xd)
 
-## Examples
-All available examples can be found [here](examples/).
-
-
 ## Default IP address
 
 The default IP address for the sensors (if not specified different is `192.168.0.1`)
@@ -100,17 +96,17 @@ The default IP address for the sensors (if not specified different is `192.168.0
 
 |     | Transport Layer | Port | Advantages | Bandwidth factor |
 | --- |---------------------- |---------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------- |
-| **[Compact](docs/documentation-msgpack-compact.md)** | `UDP` |default is port `2115` | - smallest traffic <br/> - best fit for PLCs                                                                             | 1                |
-| **[MSGPACK](docs/documentation-msgpack-compact.md)** | `UDP` |default is port `2115` | - available libraries in almost all programming languages                                                                | ~2               |
+| **Compact** | `UDP` |default is port `2115` | - smallest traffic <br/> - best fit for PLCs                                                                             | 1                |
+| **MSGPACK** | `UDP` |default is port `2115` | - available libraries in almost all programming languages                                                                | ~2               |
 
 
 # Device  configuration - Comparison and choice
 
 |                                          | Transport Layer | Port                   | When to use what                                                                                     |
 | ---------------------------------------- | --------------- | ---------------------- | ---------------------------------------------------------------------------------------------------- |
-| **[REST](docs/documentation-rest.md)**   | `TCP`           | `80`                   | - if you only want to read data - if your system can handle a challenge and response process         |
-| **[CoLa A](docs/documentation-cola.md)** | `TCP`           | default is port `2111` | - if your system cannot handle a challenge and response process <br/>                                |
-| **[CoLa B](docs/documentation-cola.md)** | `TCP`           | default is port `2112` | - if your system cannot handle a challenge and response process <br/> - it is the best fit for PLCs. |
+| **REST**   | `TCP`           | `80`                   | - if you only want to read data - if your system can handle a challenge and response process         |
+| **CoLa A** | `TCP`           | default is port `2111` | - if your system cannot handle a challenge and response process <br/>                                |
+| **CoLa B** | `TCP`           | default is port `2112` | - if your system cannot handle a challenge and response process <br/> - it is the best fit for PLCs. |
 
 
 # Getting started to work with a sensor
