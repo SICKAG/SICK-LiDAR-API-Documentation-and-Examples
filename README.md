@@ -41,9 +41,8 @@ This description covers all possibilities to work with the following sensors.
 The LiDAR API documentation differentiates between two communication concepts. For both cases there are multiple ways to work with the sensor.
 
 **1. Receive event-driven measurement data streaming**
-  - [Compact](docs/documentation-msgpack-compact.md)
-  - [MSGPACK](docs/documentation-msgpack-compact.md)
-  - [WebSocket](docs/documentation-websocket.md)
+  - Compact
+  - MSGPACK
 
 Communication concept of measurement data streaming:
 
@@ -59,9 +58,9 @@ sequenceDiagram
 <br/>
 
 **2. Read or write sensor parameters**
-  - [REST](docs/documentation-rest.md)
-  - [CoLa A](docs/documentation-cola.md)
-  - [CoLa B](docs/documentation-cola.md)
+  - REST
+  - CoLa A
+  - CoLa B
 
 Communication concept of sensor configuration:
 
@@ -137,7 +136,6 @@ The default IP address for the sensors (if not specified different is `192.168.0
   - Decide which measurement data straming approach you want you use. You can choose from these:
     - Compact Format via `UDP`
     - MSGPACK Format via `UDP`
-    - ScanData via `WebSockets`
   - Decide which sensor configuration approach you want you use. You can choose from these:
     - HTTP/REST via `TCP`
     - CoLa via `TCP`
